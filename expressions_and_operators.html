@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>variable</title>
+</head>
+<body>
+  <!-- START HEADER -->
+<header id="header" class="">
+    <nav class="navbar navbar-expand-lg navbar-light main_brd_bottom">
+        <div class="container">
+          <a class="navbar-brand main_color" href="#">Podcast JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active fz_fc_nav" aria-current="page" href="#">Подкасты</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fz_fc_nav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Документация
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Базовый</a></li>
+                  <li><a class="dropdown-item" href="#">Продвинутый</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Junior</a></li>
+                  <li><a class="dropdown-item" href="#">Middle</a></li>
+                  <li><a class="dropdown-item" href="#">Senior</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fz_fc_nav" href="#" >Подписка</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 main_search" type="search" placeholder="поиск" aria-label="Search">
+              <button class="btn btn_main_head" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<!-- END HEADER -->
+<!-- START SECTION -->
+<section class="pt-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="wrap-bxx">
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="base.html">Введение</a>
+                    <a class="nav-link active" aria-current="page" href="redactor_ide.html">Редактор IDE</a>
+                    <a class="nav-link" href="hello_world.html">Приступаем или Hello World</a>
+                    <a class="nav-link" href="functions_and_methods.html">Типы данных</a>
+                    <a class="nav-link" href="variable.html">Переменные</a>
+                    <a class="nav-link" href="functions_and_methods.html">Функции и Методы</a>
+                    <a class="nav-link" href="expressions_and_operators.html">Выражения и операторы</a>
+                    <a class="nav-link" href="#">Инструкции</a>
+                    <a class="nav-link" href="#">Обьекты</a>
+                    <a class="nav-link" href="#">Массивы</a>
+                    <a class="nav-link" href="#">Классы и конструкторы</a>
+                    <a class="nav-link" href="#">Прототипы и наследование</a>
+                    <a class="nav-link" href="#">Модули</a>
+                    <a class="nav-link" href="#">JS В Браузере</a>
+                    <a class="nav-link" href="#">DOM</a>
+                    <a class="nav-link" href="#">Что дальше?</a>
+                </nav>
+            </div>
+        </div>
+        <div class="col-9">
+            <h1>Выражения и операторы</h1>
+            <p>зачем выражения и операторы</p>
+            <div class="zabronirovano">
+                <h4>Выражения</h4>
+                <p>
+                  Выражения в языке это участок кода, который вернет значение интерпретатору
+                  <br>
+                  Например: 
+                </p>
+                <ul>
+                  <li>"string"</li>
+                  <li>123</li>
+                </ul>
+                <p>lalala</p>
+                <h4>Операторы</h4>
+                <p>
+                  <!-- Большинство операторов вам знакомы это + - * и.т.д -->
+                  <!-- JavaScript поддерживает бинарные, унарные и специальный тернарный операторы  -->
+                  Важно понимать, что все операторы имеют приоритет, приоритет определяет в какой последовательности
+                  будут вычисляться выражения. Влиять на приоритет операторов можно при помощи скобок.
+                </p>
+                <h4>Операторы присваивания</h4>
+                <p>
+                  Знак оператора присваивания это =, когда происходит присваивание, значение правого операнда присваивается
+                  левому операнду
+                  <br> 
+                  a - левый операнд, b - правый операнд, = - оператор присваивания
+                </p>
+                <p>a = b</p>
+                <p>
+                  Список операторов присваивания
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Имя</th>
+                      <th scope="col">Сокращёние</th>
+                      <th scope="col">Смысл</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Присваивание</th>
+                      <td>x = y</td>
+                      <td>x = y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание со сложением</th>
+                      <td>x += y</td>
+                      <td>x = x + y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с вычитанием</th>
+                      <td>x -= y</td>
+                      <td>x = x - y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с умножением</th>
+                      <td>x *= y</td>
+                      <td>x = x * y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с делением</th>
+                      <td>x /= y</td>
+                      <td>x = x / y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание по модулю</th>
+                      <td>x %= y</td>
+                      <td>x = x % y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с левым сдвигом</th>
+                      <td>x <<= y</td>
+                      <td>x = x << y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с правым сдвигом</th>
+                      <td>x >>= y</td>
+                      <td>x = x >> y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с беззнаковым сдвигом вправо</th>
+                      <td>x >>>= y</td>
+                      <td>x = x >>> y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с побитовым AND</th>
+                      <td>x &= y</td>
+                      <td>x = x & y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с побитовым XOR</th>
+                      <td>x ^= y</td>
+                      <td>x = x ^ y</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Присваивание с побитовым OR</th>
+                      <td>x |= y</td>
+                      <td>x = x | y</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h4>Деструктуризация</h4>
+                <p>Рассмотрим еще один способ присваивания, данный способ отлично подойдет для взаимодействия
+                  с массивами и объектами
+                </p>
+                <p>
+                  var foo = ["one", "two", "three"];
+                  <br>
+                  // без деструктуризации
+                  <br>
+                  var one   = foo[0];
+                  <br>
+                  var two   = foo[1];
+                  <br>
+                  var three = foo[2];
+                  <br>
+                  // с деструктуризацией
+                  <br>
+                  var [one, two, three] = foo;
+                </p>
+                <h4>Операторы сравнения</h4>
+                <p>
+                  Оператор сравнивает операнды и возвращает логическое значение true или false. Тип данных операнд может быть различных типов.
+                </p>
+                <p>
+                  Обьявим переменную a со значением 1 и переменную f со значением 3
+                  <br>
+                  Пример:
+                  <br>
+                  let a = 1
+                  <br>
+                  let f = 3
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Оператор</th>
+                      <th scope="col">Пример</th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Равно == </th>
+                      <td> a == f</td>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Не равно != </th>
+                      <td>a != f</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Строго равно === </th>
+                      <td>a === f</td>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Строго не равно !== </th>
+                      <td>a !== f</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Больше > </th>
+                      <td> a > f </td>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Больше или равно >= </th>
+                      <td> a >= f </td>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Меньше < </th>
+                      <td> a < f </td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Меньше или равно <=	</th>
+                      <td>a <= f </td>
+                      <td>true</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                <br>
+                <h4>Арифметические операторы</h4>
+                <p>
+                  Операндом в данном случае могут выступать и числа
+                  <br>
+                  Пример:
+                  <br>
+                  1 + 3
+                  <br>
+                  let a = 1
+                  <br>
+                  let f = 3
+                  <br>
+                  a + f
+                  <br>
+                  Результатом выполнения всегда одно значение, с типамом данных число
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Оператор</th>
+                      <th scope="col">Описание</th>
+                      <th scope="col">Пример</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">+</th>
+                      <td>добавление</td>
+                      <td>1 + 3 </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">-</th>
+                      <td>вычитание</td>
+                      <td>3 - 1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">*</th>
+                      <td>умножение</td>
+                      <td> 2 * 2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">**</th>
+                      <td>возведение в степень (ES 2016)</td>
+                      <td>2**2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">/</th>
+                      <td>деление</td>
+                      <td>4 / 2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">%</th>
+                      <td>модуль (остаток)</td>
+                      <td>3%2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">++</th>
+                      <td>инкремент </td>
+                      <td>++a, a++</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">--</th>
+                      <td>дикремент</td>
+                      <td>--a, a--</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Инкремент и декремент прменяются только к переменным, их два вида постфиксный и префиксный.
+                  <br>
+                  Постфиксный a++ или a-- сначала возвращает текущее значение, потом изменяет значение переменной.
+                  <br>
+                  Префиксный ++a или --a сначала изменяет значение, потом выводит уже измененное значение 
+                </p>
+                <br>
+                <h4>Логические операторы</h4>
+                <p>
+                  Логические выражения вычисляются слева направо, логические операторы оперируют логическими значениями true и false
+                  но значения возвращаются текущие, заданные в операнд.
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Оператор</th>
+                      <th scope="col">Пример</th>
+                      <th scope="col">Описание</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Логическое И - &&</th>
+                      <td>operand1 && operand2</td>
+                      <td>вернется true если обе операнды true, иначе вернется false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Логическое ИЛИ  - || </th>
+                      <td>operand1 || operand2</td>
+                      <td>Если один из операнд после преобразования будет true то true и вернется, если оба false вернется false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Логическое НЕ - ! </th>
+                      <td>!operand1</td>
+                      <td>Возвращает false, если операнд может быть преобразован в true, иначе вернется true.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  В false преобразуются - null, 0, NaN, пустая строка ("") или undefined.
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Пример c И &&</th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">true && true</th>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">true && false</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false && true</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false && (3 == 4)</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">"Cat" && "Dog"</th>
+                      <td>Dog</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false && "Cat"</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">"Cat" && false</th>
+                      <td>false</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Пример с ИЛИ || </th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">true || true</th>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false || true</th>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">true || false</th>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false || (3 == 4)</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">"Cat" || "Dog"</th>
+                      <td>Cat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">false || "Cat"</th>
+                      <td>Cat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">"Cat" || false</th> 
+                      <td>Cat</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Пример с НЕ !</th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">!true</th>
+                      <td>false</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">!false</th>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">!"Cat"</th>
+                      <td>false</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h4>Строковые операторы</h4>
+                <p>При работе со строками, их можно складывать, при помощи оператора +, данный оператор обьединяет
+                  строки а процесс называется конкатинацией. В языке JavaScript можно сложить два типа данных - число и строку,
+                  в результате получится строка.
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Пример</th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> "Hello" + "World"</th>
+                      <td>"HelloWorld"</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> "Hello World" + 243</th>
+                      <td>"Hello World243"</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h4>Тернарный оператор</h4>
+                <p>условие ? value1 : value2</p>
+                <p>Если условие вернет true то выполняется первое выражение value1, если условие false то выполнится 
+                  второе выражение value2
+                </p>
+                <br>
+                <p>Пример: </p>
+                <p>
+                  true ? console.log('Value1') : console.log('Value2')
+                </p>
+                <br>
+                <h4>Оператор запятая</h4>
+                <p>
+                  Данный оператор выполняет оба операнда слева направо и возвращает значение второго операнда.
+                  Оператор запятая имеет наименьший приоритет выполнения.
+                  <br>
+                  Пример:
+                  <br>
+                  let a = (1, 3)
+                  <br>
+                  переменной а присвоится значение 3
+                </p>
+                <br>
+                <h4>Оператор typeof</h4>
+                <p>
+                  Используя оператор typeof можно узнать какой тип операнда
+                  <br>
+                  Пример:
+                  <br>
+                  typeof operand или typeof(operand)
+                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Пример</th>
+                      <th scope="col">Результат</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">typeof 1</th>
+                      <td>number</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof 'string'</th>
+                      <td>string</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof true</th>
+                      <td>boolean</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof undefined</th>
+                      <td>undefined</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof {}</th>
+                      <td>object</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof null</th>
+                      <td>object</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">typeof function</th>
+                      <td>function</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- <p>Все выражения можно разделить на категории:</p>
+                <ul>
+                  <li>Арифметические</li>
+                  <li>Строковые</li>
+                  <li>Логические</li>
+                  <li>Основные выражения</li>
+                  <li>Левосторонние выражения</li>
+                </ul> -->
+            </div>
+        </div>
+        
+      </div>
+  </div>
+</section>
+<!-- END SECTION -->
+<!-- START FOOTER -->
+<footer class="main_brd_top m_b_and_p_b">
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <h5 class="h5_logos_bott">Podcast JS</h5>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, praesentium?
+        </p>
+      </div>
+      <div class="col-3">
+        <ul class="navbar-nav">
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">соглашение</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">правила</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul class="navbar-nav">
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- END FOOTER -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="hello_world.js"></script>
+</body>
+</html>

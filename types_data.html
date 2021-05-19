@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Base</title>
+</head>
+<body>
+  <!-- START HEADER -->
+<header id="header" class="">
+    <nav class="navbar navbar-expand-lg navbar-light main_brd_bottom">
+        <div class="container">
+          <a class="navbar-brand main_color" href="#">Podcast JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active fz_fc_nav" aria-current="page" href="#">Подкасты</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fz_fc_nav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Документация
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Базовый</a></li>
+                  <li><a class="dropdown-item" href="#">Продвинутый</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Junior</a></li>
+                  <li><a class="dropdown-item" href="#">Middle</a></li>
+                  <li><a class="dropdown-item" href="#">Senior</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fz_fc_nav" href="#" >Подписка</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 main_search" type="search" placeholder="поиск" aria-label="Search">
+              <button class="btn btn_main_head" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<!-- END HEADER -->
+<!-- START SECTION -->
+<section class="pt-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="wrap-bxx">
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="base.html">Введение</a>
+                    <a class="nav-link active" aria-current="page" href="redactor_ide.html">Редактор IDE</a>
+                    <a class="nav-link" href="hello_world.html">Приступаем или Hello World</a>
+                    <a class="nav-link" href="#">Типы данных</a>
+                    <a class="nav-link" href="variable.html">Переменные</a>
+                    <a class="nav-link" href="functions_and_methods.html">Функции и Методы</a>
+                    <a class="nav-link" href="expressions_and_operators.html">Выражения и операторы</a>
+                    <a class="nav-link" href="#">Инструкции</a>
+                    <a class="nav-link" href="#">Обьекты</a>
+                    <a class="nav-link" href="#">Массивы</a>
+                    <a class="nav-link" href="#">Классы и конструкторы</a>
+                    <a class="nav-link" href="#">Прототипы и наследование</a>
+                    <a class="nav-link" href="#">Модули</a>
+                    <a class="nav-link" href="#">JS В Браузере</a>
+                    <a class="nav-link" href="#">DOM</a>
+                    <a class="nav-link" href="#">Что дальше?</a>
+                </nav>
+            </div>
+        </div>
+        <div class="col-9">
+            <h1>Типы данных</h1>
+            <p>типы данных в js</p>
+            <div class="zabronirovano">
+                <p>Примером ранее, мы вывели строку "Hello World" в консоль разработчика, а сейчас давайте выучим типы данных
+                    которые присутствуют в js. Очень важно знать какие типы данных есть в языке.
+                </p>
+                <ul class="">
+                    <li class="">string - строка</li>
+                    <li class="">number - число</li>
+                    <li class="">bigInt - Целые числа произвольной точности</li>
+                    <li class="">object - обьект</li>
+                    <li class="">boolean - для true и false</li>
+                    <li class="">undefined - для пустых значений</li>
+                    <li class="">null - для неизвестных значений</li>
+                    <li class="">symbol - символ</li>
+                  </ul>
+                  <p>1. string - в строке хранятся символы, под символом имеется любое введенное значение, так же 
+                      строка может быть пустой, т.е содержать 0 символов. <br>
+                      <span>"" - пустая строка</span>
+                      <br>
+                      <span>"12345" - строка содержащая числовые символы, все так же является строкой</span>
+                  </p>
+                  <p>2. number - все просто, храним числа в 64 битном формате, не превышающие 2 в 53 степени
+                        <br>
+                        <span>Пример:1</span>
+                  </p>
+                  <p>3. bigInt - тип данных позволяющий нам работать с числами, выходящими за рамки типа данных number
+                        <br>
+                        Пример:
+                  </p>
+                  <p>4. object - обьект это набор свойств, и каждое свойство состоит из имени и значения, ассоциированного с этим именем.
+                        <br>
+                        Пример:
+                  </p>
+                  <p>5. boolean - данный тип имеет два значения true или false
+                    <br>
+                    Пример:
+                  </p>
+                  <p>
+                      6. undefined - данный тип имеет одно значение, неопределенности.
+                      <br>
+                      Пример:
+                  </p>
+                  <p>
+                    7. null - это особый тип данных в языке, и не имеет ни чего общено с undefined вскоре вы поймете как с нм работать
+                    <br>
+                    Пример:
+                  </p>
+                  <p>8. symbol - это уникальный и неизменяемый тип данных, который может быть использован как идентификатор для свойств объектов
+                    <br>
+                    Пример:
+                  </p>
+            </div>
+        </div>
+        
+      </div>
+  </div>
+</section>
+<!-- END SECTION -->
+<!-- START FOOTER -->
+<footer class="main_brd_top m_b_and_p_b">
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <h5 class="h5_logos_bott">Podcast JS</h5>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, praesentium?
+        </p>
+      </div>
+      <div class="col-3">
+        <ul class="navbar-nav">
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">соглашение</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">правила</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul class="navbar-nav">
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+          <li><a href="" class="link_bt_ft navbar-brand">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- END FOOTER -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="hello_world.js"></script>
+</body>
+</html>
